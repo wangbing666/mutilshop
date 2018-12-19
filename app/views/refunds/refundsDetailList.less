@@ -1,0 +1,436 @@
+@import "~antd-mobile/lib/input-item/style/index.less";
+@import "myInputStyle";
+/* 添加修改运单的样式 （SH） */
+.quitUnClick {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  color: #979797;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 98px;
+  border-top: 1px solid #E9E9E9;
+  line-height: 98px;
+  div{
+    flex: 1;
+    &:nth-child(1){
+      border-right: 1px solid #e9e9e9;
+    }
+    &:nth-child(2){
+      color: #D00510;
+    }
+  }
+  &.status-1{
+    div{
+      &:nth-child(1){
+        color: #373737;
+      }
+    }
+  }
+}
+/* ------------------ */
+
+.order_detail_number_p {
+  margin-top: 20px;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  background: #FFFFFF;
+  // border: 1px solid #D4D4D4; /*no*/
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.refund_item_empty {
+  height: 20px;
+  border-bottom: solid 1px #D4D4D4; /*no*/
+}
+
+.order_detail_number {
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  background: #FFFFFF;
+  // border-bottom: 1px solid #D4D4D4; /*no*/
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.oder_number_left {
+  display: block;
+  // float: left;
+  height: 79px;
+  line-height: 79px;
+  font-family: PingFangSC-Regular;
+  font-size: 28px; /*px*/
+  color: #2D2D2D;
+  text-align: left;
+  margin: 0 30px;
+  letter-spacing: 0.33px;
+  border-bottom: 1px solid #D4D4D4; /*no*/
+  &.left2 {
+    border: none;
+  }
+}
+
+.oder_number_right {
+  float: left;
+  font-family: PingFangSC-Regular;
+  font-size: 28px; /*px*/
+  line-height: 80px;
+  height: 80px;
+  text-align: center;
+  color: #2D2D2D;
+  margin-right: 28px;
+  letter-spacing: 0.33px;
+}
+
+.refund_money_p {
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 191px;
+  line-height: 191px;
+  border-bottom: 1px solid #D4D4D4; /*no*/
+}
+
+.refund_money_img {
+  width: 32px;
+  height: 32px;
+}
+
+.refund_money {
+  font-size: 24px; /*px*/
+  text-align: center;
+  margin-left: 12px;
+  color: #000000;
+  letter-spacing: 0.33px;
+}
+
+.refund_number_p {
+  margin-top: 20px;
+}
+
+.submit_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 181px;
+}
+
+.submit_2 {
+  width: 234px !important;
+  height: 78px !important;
+  line-height: 78px !important;
+  font-family: PingFangSC-Regular !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+  letter-spacing: 0.47px !important;
+  background: #000000 !important;
+  border-radius: 12px !important;
+  margin: 0 !important;
+}
+
+.submit_1 {
+  width: 234px !important;
+  height: 78px !important;
+  line-height: 78px !important;
+  font-family: PingFangSC-Regular !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+  letter-spacing: 0.47px !important;
+  background: #E3E5E9 !important;
+  border-radius: 12px !important;
+  margin: 0 !important;
+}
+
+.submit_cancel_p {
+  width: 100%;
+  height: 239px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit_cancel_p_1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit_cancel {
+  width: 501px !important;
+  height: 88px !important;
+  line-height: 88px !important;
+  font-family: PingFangSC-Regular !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+  letter-spacing: 0.47px !important;
+  background: #000000 !important;
+  border-radius: 12px !important;
+}
+
+.submit_cancel {
+  width: 501px !important;
+  height: 88px !important;
+  line-height: 88px !important;
+  font-family: PingFangSC-Regular !important;
+  font-size: 34px !important;
+  color: #FFFFFF !important;
+  letter-spacing: 0.47px !important;
+  background: #000000 !important;
+  border-radius: 12px !important;
+}
+
+.submit_cancel_1 {
+  // margin-top: 426px;
+  // width: 501px !important;
+  // height: 88px !important;
+  // line-height: 88px !important;
+  // font-family: PingFangSC-Regular !important;
+  // font-size: 34px !important;
+  // color: #FFFFFF !important;
+  // letter-spacing: 0.47px !important;
+  // background: #000000 !important;
+  // border-radius: 12px !important;
+}
+
+.leave_msg {
+  display: block;
+  margin: 30px;
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  color: #2D2D2D;
+  border-bottom: solid 20px #ffffff;
+  letter-spacing: 1.26px;
+}
+
+.flow-list {
+  padding: 0 10px 0 44px;
+  background-color: #fff;
+  border-bottom: 1px solid #D4D4D4; /*no*/
+}
+
+.new-order-flow {
+  padding: 5px 7px 0;
+  border-left: 2px solid #E3E5E9; /*no*/
+}
+
+.new-p-re {
+  position: relative;
+}
+
+.new-order-arr {
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+}
+
+.new-of-storey li {
+  position: relative;
+  padding: 15px 20px;
+  // border-bottom: 1px solid #D4D4D4; /*no*/
+}
+.new-of-storey_li {
+  position: relative !important;
+  padding: 15px 20px !important;
+  border-bottom:0 !important;
+
+}
+
+.new-of-storey li .icon {
+  position: absolute;
+  left: -18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E3E5E9;
+}
+
+.new-of-storey li .top-white {
+  position: absolute;
+  top: -5.2%;
+  left: -17.5px;
+  width: 12px;
+  height: 30%;
+  background-color: #fff;
+}
+
+.new-of-storey li .bottom-white {
+  position: absolute;
+  top: 27px;
+  left: -17.5px;
+  width: 12px;
+  height: calc(100% - 28%);
+  background-color: #fff;
+}
+
+.new-of-storey li .icon1 {
+  background-color: #F55B5B;
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  //background: black;
+}
+
+.new-of-storey li .icon.on {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  background-color: #FBC0C0;
+  top: 14%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: -23px;
+  //flex-flow: column;
+}
+
+.new-of-storey li span {
+  display: block;
+  font-size: 22px; /*px*/
+  font-family: PingFangSC-Regular;
+  color: #1A1A1A;
+  letter-spacing: 1.26px;
+}
+
+.new-of-storey li span:last-child {
+  padding-top: 17px;
+  color: #666666;
+}
+
+.new-of-storey li span.first {
+  color: #1A1A1A;
+}
+
+/*上方*/
+
+.new-order-track {
+  background-color: #fff;
+  padding: 20px 15px;
+}
+
+.new-order-track span {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #1A1A1A;
+  letter-spacing: 1.38px;
+  margin-left: 15px;
+  width: 260px;
+}
+
+.express_item {
+  height: 90px;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 0;
+  border-top: solid 1px #D4D4D4; /*no*/
+}
+
+.express_item_3 {
+  height: 90px;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 0;
+}
+
+.express_item_1 {
+  height: 90px;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 0;
+  border-top: solid 1px #D4D4D4; /*no*/
+  border-bottom: solid 1px #D4D4D4; /*no*/
+}
+
+.express_item_title {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #2D2D2D;
+  margin-right: 101px;
+  margin-left: 30px;
+  letter-spacing: 0.33px;
+}
+
+.express_item_title_1 {
+  margin-left: 30px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #2D2D2D;
+  margin-right: 101px;
+  letter-spacing: 0.33px;
+}
+
+.express_item_name {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #666;
+  width: 400px;
+  height: 90px;
+  line-height: 90px;
+  text-align: left;
+  letter-spacing: 1.38px;
+  -webkit-tap-highlight-color: #666;
+
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #666;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #666;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #666;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #666;
+}
+
+.refund_msg {
+  background: #ffffff;
+  margin-top: 20px;
+  border-bottom: solid 1px #D4D4D4; /*no*/
+}
+
+.quit3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  color: #D00510;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 98px;
+  border-top: 1px solid #E9E9E9;
+  line-height: 98px;
+  background: #ffffff;
+}
+
+

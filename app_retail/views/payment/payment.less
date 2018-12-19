@@ -1,0 +1,88 @@
+.payment{
+  height: 100%;
+  width: 100%;
+  background: #f3f5fe;
+  overflow: hidden;
+  position: relative;
+  .amountsPayable{
+    display: flex;
+    flex: 1;
+    height: 180px;
+    border-top: 1px solid #979797;/*no*/
+    border-bottom: 1px solid #979797;/*no*/
+    margin-top: 20px;
+    background: #FFFFFF;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .amountsPayableText{
+      font-family: PingFangSC-Regular;
+      font-size: 30px;
+      color: #000000;
+      letter-spacing: 0.46px;
+    }
+    .moneyText{
+      font-family: PingFang-SC-Medium;
+      font-size: 48px;
+      color: #000000;
+      letter-spacing: 0.74px;
+    }
+  }
+  .theWay{
+    width: 100%;
+    border-top: 1px solid #D4D4D4;/*no*/
+    background: #FFFFFF;
+    margin-top: 20px;
+    .theWayList{
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      height: 98px;
+      border-bottom: 1px solid #D4D4D4;/*no*/
+      .theWayLeft{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        span{
+          font-family: PingFangSC-Regular;
+          font-size: 28px;
+          color: #000000;
+          letter-spacing: 0;
+          margin-left: 18px;
+        }
+        img{
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .theWayRight{
+        display: flex;
+        align-items: center;
+        img{
+          width: 32px;
+          height: 32px;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  .paymentBottom{
+    width: 100%;
+    text-align: center;
+    margin-top: 490px;
+    button{
+      margin: 0 auto;
+      border-radius: 8px;
+      height: 88px;
+      width: 640px;
+      font-family: PingFangSC-Regular;
+      letter-spacing: 0.47px;
+      font-size: 30px;
+    }
+  }
+
+}

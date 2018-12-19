@@ -1,0 +1,309 @@
+.handleSaleListView{
+  .am-list-header{
+    padding: 0!important;
+  }
+}
+.am-list-body {
+  border-bottom: none;
+  margin-top: -10px;
+}
+.cellThree{
+  background-color: #000032;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  .header{
+    width: 750px;
+    height:55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #26264c;
+    position: relative;
+    .title{
+      color:white;
+      font-size: 24px;
+      width: 750px;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-family: PingFangSC-Regular;
+    }
+  }
+  .goods{
+    .good{
+      float: left;
+      margin-left: 30px;
+      width: 210px;
+      margin-top:50px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      img{
+        height:210px;
+        width: 210px;
+      }
+      .goodName{
+        color:black;
+        font-size: 29px;
+        font-family: PingFangSC-Regular;
+        margin-top: 10px;
+        overflow: hidden;/*超出部分隐藏*/
+        white-space: nowrap;/*不换行*/
+        text-overflow:ellipsis;/*超出部分文字以...显示*/
+        width: 210px;
+        text-align: center;
+        //overflow: hidden;
+        //display: -webkit-box;
+        //-webkit-box-orient: vertical;
+        //-webkit-line-clamp:2
+
+      }
+      .price{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        span{
+          color:black;
+          font-size: 24px;
+          font-family: PingFangSC-Regular;
+        }
+        .actPrice{
+          color:black;
+          font-size: 24px;
+          font-family: PingFangSC-Regular;
+          margin-bottom:10px;
+
+        }
+      }
+    }
+  }
+}
+.cellTwo{
+  background-color: #663c23;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  .header{
+    width: 750px;
+    height:210px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .title{
+      color:rgb(240,220,189);
+      font-size: 55px;
+      font-family: PingFangSC-Regular;
+      position: absolute;
+      left:149px;
+      top:93px;
+      width: 452px;
+      text-align: center;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      text-align: center;
+      margin-top: -18px;
+
+    }
+    .titleContainer{
+      background-image: url('../../images/shopActivity/title.png');
+      height:182px;
+      width: 452px;
+    }
+    img{
+      margin-top: -18px;
+      height:182px;
+      width: 452px;
+    }
+  }
+  .goods{
+    .good{
+      float: left;
+      margin-left: 20px;
+      width: 345px;
+      margin-bottom:20px;
+      background-color: white;
+      padding-bottom: 18px;
+      height:600px;
+      position:relative;
+      img{
+        height:345px;
+        width: 345px;
+      }
+      .goodName{
+        color:black;
+        font-size: 29px;
+        font-family: PingFangSC-Regular;
+        margin-top: 0px;
+        margin-left: 12px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:2;
+        width: (345-12-30)px;
+
+      }
+      .price{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        //margin-left: 12px;
+        //margin-top: 86px;
+        position: absolute;
+        left:12px;
+        bottom:107px;
+        span{
+          color: #e10d0d;
+          font-size: 30px;
+          font-family: PingFangSC-Regular;
+        }
+        .actPrice{
+          color:#e10d0d;
+          font-size: 40px;
+          font-family: PingFangSC-Regular;
+        }
+        .realPrice{
+          color:rgb(159,159,159);
+          font-size: 25px;
+          font-family: PingFangSC-Regular;
+          margin-left: 10px;
+          text-decoration: line-through;
+        }
+      }
+      .buy{
+        color:white;
+        font-size: 30px;
+        font-family: PingFangSC-Regular;
+        height:70px;
+        width: 275px;
+        background-color:#ff8500;
+        line-height: 70px;
+        text-align: center;
+        //margin-left: 35px;
+        //margin-top: 20px;
+        position: absolute;
+        left:35px;
+        bottom: 10px;
+      }
+    }
+  }
+}
+.cellOne{
+  background-color: #f4ee8c;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  .header{
+    width: 750px;
+    height:207px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .title{
+      color:white;
+      font-size: 55px;
+      font-family: PingFangSC-Regular;
+      position: absolute;
+      width: 383px;
+      left:183px;
+      top:93px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      text-align: center;
+    }
+    img{
+      height:143px;
+      width: 750px;
+    }
+  }
+  .goods{
+    .good{
+      float: left;
+      margin-left: 20px;
+      width: 345px;
+      margin-bottom:20px;
+      background-color: white;
+      padding-bottom: 18px;
+      height: 600px;
+      position: relative;
+      img{
+        height:345px;
+        width: 345px;
+      }
+      .goodName{
+        color:black;
+        font-size: 29px;
+        font-family: PingFangSC-Regular;
+        margin-top: 0px;
+        margin-left: 12px;
+        width: (345-12-30)px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:2
+      }
+      .price{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        //margin-left: 12px;
+        //margin-top: 86px;
+        left:12px;
+        bottom: 106px;
+        position: absolute;
+        span{
+          color:#e10d0d;
+          font-size: 30px;
+          font-family: PingFangSC-Regular;
+        }
+        .actPrice{
+          color:#e10d0d;
+          font-size: 40px;
+          font-family: PingFangSC-Regular;
+        }
+        .realPrice{
+          color:rgb(159,159,159);
+          font-size: 25px;
+          font-family: PingFangSC-Regular;
+          margin-left: 10px;
+          text-decoration:line-through;
+        }
+      }
+      .buy{
+        color:white;
+        font-size: 30px;
+        font-family: PingFangSC-Regular;
+        height:70px;
+        width: 275px;
+        background-color: #ff8500;
+        line-height: 70px;
+        text-align: center;
+        //margin-left: 35px;
+        //margin-top: 20px;
+        left:35px;
+        bottom: 18px;
+        position: absolute;
+
+      }
+    }
+  }
+}
+.activityHearder{
+  height:auto;
+  width: 750px;
+  img{
+    width: 750px;
+    height: auto;
+    display: block;
+  }
+}

@@ -1,0 +1,289 @@
+/**
+ * Created by fantiantian on 2017/11/20.
+ * 拼团详情样式
+ */
+.container {
+  width: 100%;
+  background-color: #EFEFF4;
+  position: relative;
+  overflow-y:scroll;
+  .goodDetails {
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 220px;
+    background-color: #FFFFFF;
+    align-items: center;
+    margin-top: 0px;
+    img {
+      width: 160px;
+      height: 160px;
+      margin-left: 28px;
+    }
+    .rightContent {
+      display: flex;
+      flex-direction: column;
+      margin-left: 24px;
+      height: 140px;
+      margin-top: 0px;
+      justify-content: space-between;
+      .bottomPrice {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-left: 4px;
+        .div1 {
+          font-family: Roboto-Medium;
+          font-size: 30px;
+          color: #000000;
+          letter-spacing: 0;
+          height: 42px;
+          line-height: 42px;
+        }
+        .div2 {
+          font-family: PingFangSC-Regular;
+          font-size: 24px;
+          color: #6D6D72;
+          letter-spacing: 0;
+          margin-left: 16px;
+          vertical-align: bottom;
+          height: 33px;
+          line-height: 33px;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+
+  .rightContent p:nth-child(1) {
+    font-family: PingFangSC-Regular;
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: 0.33px;
+    height: 42px;
+    line-height: 42px;
+    width: 500px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+  }
+  .rightContent p:nth-child(2) {
+    font-family: PingFang-SC-Regular;
+    font-size: 24px;
+    color: #6D6D72;
+    letter-spacing: 0.35px;
+  }
+
+  .bottomStyle {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 89px;
+    .mulitP {
+      font-family: PingFangSC-Regular;
+      font-size: 30px;
+      color: #6D6D72;
+      letter-spacing: 0.33px;
+      height: 42px;
+      line-height: 42px ;
+    }
+    .invateBtn {
+      margin: 28px 75px 0px 75px;
+      height: 88px;
+      width: 600px;
+      border-radius: 8px;
+      font-family: PingFangSC-Regular;
+      font-size: 30px;
+      letter-spacing: 0.33px;
+      background-color: #007AED;
+      color: #FFFFFF;
+    }
+    .qrCode {
+      margin-top: 30px;
+      font-family: PingFangSC-Regular;
+      font-size: 30px;
+      color: #6D6D72;
+      letter-spacing: 0.33px;
+      height: 42px;
+      line-height: 42px;
+    }
+  }
+
+  .gotoHome {
+    width: 750px;
+    margin-bottom: 52px;
+    text-align: center;
+    height: 42px;
+    .goHomeText {
+      font-family: PingFangSC-Regular;
+      font-size: 30px;
+      color: #6D6D72;
+      letter-spacing: 0.33px;
+      line-height: 42px;
+    }
+  }
+  .hMarginTop {
+    margin-top: 140px;
+  }
+  .hMarginTop1 {
+    margin-top: 212px;
+  }
+}
+
+//显示分享提示
+.showMaskModal {
+  display: flex;
+  flex-direction: column;
+  .maskModal
+}
+
+//隐藏分享提示
+.hiddenMaskModal {
+  display: none;
+}
+
+.maskModal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 750px;
+  height: 100%;
+  background-color: rgba(40, 40, 41, 0.8);
+}
+.img1 {
+  width: 507px;
+  height: 407px;
+  margin-left: 183px;
+}
+.img2 {
+  width: 226px;
+  height: 91px;
+  margin-top: 51px;
+  margin-left: 247px;
+}
+
+//显示二维码
+.showQRCodeModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .maskModal
+}
+
+//二维码的背景白色模块
+.QRBgDiv {
+  padding: 25px;
+  display: flex;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  margin-top: 334px;
+}
+
+//隐藏二维码
+.hiddenQRCodeModal {
+  display: none;
+}
+
+//拼团占坑模块样式
+.inGroupShopping {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  width: 750px;
+  background-color: #FFFFFF;
+  .topStyle {
+    display: flex;
+    flex-direction: row;
+    margin: 29px 30px 16px 35px;
+    justify-content: space-between;
+    .showText {
+      font-family: PingFang-SC-Regular;
+      font-size: 30px;
+      letter-spacing: 0.44px;
+      height: 42px;
+      line-height: 42px;
+    }
+    .span1 {
+      color: #000000;
+    }
+    .span2 {
+      color: #6D6D72;
+    }
+  }
+  .centerStyle {
+    border-bottom: 1px solid #B6B6B8;
+    width: 750px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    //正在拼团的人头像显示
+    .groupPeopleShow {
+      width: 750px;
+      margin-left: 6px;
+      margin-right: 6px;
+      position: relative;
+      display: table;
+      img {
+        float: left;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px 24px 0px 24px;
+      }
+      .bgDiv {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #EFEFF4;
+        margin: 20px 24px 0px 24px;
+        border-radius: 50px;
+      }
+    }
+
+    .divP {
+      margin-top: 20px;
+      width: 750px;
+      text-align: center;
+      margin-bottom: 44px;
+      height: 42px;
+      span {
+        font-family: PingFangSC-Regular;
+        font-size: 30px;
+        color: #6D6D72;
+        letter-spacing: 0.44px;
+        line-height: 42px;
+      }
+      .spanTime {
+        font-family: Roboto-Medium;
+        font-size: 30px;
+        letter-spacing: 0.44px;
+        line-height: 42px;
+      }
+    }
+  }
+  .bottomText {
+    margin: 23px 30px 33px 30px;
+    height: 42px;
+    span:nth-child(1) {
+      font-family: PingFang-SC-Regular;
+      font-size: 30px;
+      color: #000000;
+      letter-spacing: 0.44px;
+      line-height: 42px;
+    }
+    span:nth-child(2) {
+      font-family: PingFang-SC-Regular;
+      font-size: 30px;
+      color: #6D6D72;
+      letter-spacing: 0.44px;
+      line-height: 42px;
+    }
+  }
+}
+
+
+
+

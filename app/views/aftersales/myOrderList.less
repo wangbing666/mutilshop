@@ -1,0 +1,28 @@
+@tabs-prefix-cls: am-tabs;
+@select-color:#000000;
+.@{tabs-prefix-cls} {
+
+  &-bar {
+
+    .@{tabs-prefix-cls}-tab {
+      flex: 1;
+      font-size: 32px;
+      justify-content: center;
+      font-family: PingFangSC-Regular;
+      letter-spacing: 0.35px;
+      height: 88px;
+
+      &-active {
+        color: @select-color;
+      }
+    }
+  }
+
+  &-ink-bar {
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    background-color: @select-color;
+
+  }
+}

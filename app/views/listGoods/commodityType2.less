@@ -1,0 +1,222 @@
+.ListGoodsBody {
+  background: #F4f6fe;
+  width: 750px;
+  position: relative;
+  .hatListView {
+   // display: inherit;
+    width: 750px;
+    background: #f4f5f7;
+    padding: 0;
+    display: table;
+    .am-list-header{
+      padding: 0;
+      border: 0;
+    }
+    .am-list-body:after {
+      border-bottom: 0px solid #ddd;/*no*/
+      top: 0;
+    }
+    .am-list-body{
+      border: 0;
+      display: table;
+      background: #f4f5f7;
+     // margin-top: -10px;
+    }
+    .am-list-footer{
+      padding: 0;
+      background: #F4f5f7;
+    }
+  }
+}
+.listGoodTop{
+  width: 750px;
+  .listcover{
+    height: 400px;
+    width: 750px;
+    //display: block;
+  }
+}
+.commodityType{
+  height: 100px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F4f6fe;
+  .grounpContainer{
+    width: 750px;
+    height:100px;
+    background-color: #007AED;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    .grounpName{
+      font-family: PingFangSC-Light;
+      font-size: 34px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+    .leftImg{
+      width: 120px;
+      height: 2px;
+      background-color: white;
+      margin-right: 41px;
+    }
+    .rightImg{
+      width: 120px;
+      height: 2px;
+      background-color: white;
+      margin-left: 41px;
+    }
+  }
+}
+//修改后的样式
+.commodityTypeTow{
+  height: 150px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .CTbgImg{
+    height: 150px;
+    width: 750px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .CTbgImg img{
+    width: 647px;
+    height: 125px;
+  }
+  .CTbgTitle{
+    height: 150px;
+    width: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .spanTow{
+      margin-left: 15px;
+    }
+  }
+  .CTbgTitle span{
+    color: #1B1B20;
+    font-size: 26px;
+    /*font-weight: bold;*/
+  }
+}
+  //列表帽子样式
+  .HatListBody{
+    width: 372px;
+    height: 522px;
+    margin-top: 2px;/*px*/
+    background: #FFFFFF;
+    float: left;
+    box-sizing: border-box;
+    margin-left:2px;/*px*/
+    position: relative;
+   /* &:nth-of-type(1){
+      margin-top:0;
+    }
+    &:nth-of-type(2){
+      margin-top:0;
+    }
+    &:nth-child(odd){
+      margin-left: 0;
+    }*/
+    .hatImgBody{
+      height: 372px;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .soldOutImg{
+      position: absolute;
+      width: 66px;
+      height: 66px;
+      right: 30px;
+      top: 270px;
+      z-index: 999;
+    }
+    .hatImg{
+      width: 372px;
+      height: 372px;
+    }
+    .hatAttribute{
+      width: 372px;
+      height: 150px;
+      overflow: hidden;
+      position: relative;
+      .hatName{
+        width: 372px;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        font-size: 26px;/*px*/
+        color: rgba(0, 0, 0, 0.45);
+        letter-spacing: 0.5px;
+        margin-top: 40px;
+      }
+      .hatUnitPrice{
+        width: 372px;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        font-size: 28px;/*px*/
+        color: #000000;
+        letter-spacing: 0.8px;
+        margin-top: 10px;
+      }
+    }
+  }
+//底部样式
+.listViewFoot{
+  height: 130px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #CECECE;
+    letter-spacing: 1.26px;
+  }
+  .imgLeft{
+    margin-right: 28px;
+    width: 122px;
+    height: 1px;
+  }
+  .imgRight{
+    margin-left: 28px;
+    width: 122px;
+    height: 1px;
+  }
+}
+
+//试运营
+.tryOutBodyTow{
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  span{
+    font-family: PingFangSC-Light;
+    font-size: 20px;
+    color: #1B1B20;
+    letter-spacing: 0.46px;
+  }
+}

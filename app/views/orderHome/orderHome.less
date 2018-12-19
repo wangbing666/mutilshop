@@ -1,0 +1,169 @@
+.orderHome{
+  height: 100%;
+  width: 100%;
+  background: #F4F5F7;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  //头部用户信息
+  .orderHomeTop{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background: #fff;
+    .userInfo{
+      position: absolute;
+      height: 300px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      text-align: center;
+      img{
+        display: block;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 45px auto 18px auto;
+      }
+      .mobile{
+        display: block;
+        line-height: 42px;
+        font-family: PingFangSC-Regular;
+        color: #373737;
+        font-size: 30px;/*px*/
+        text-align: center;
+      }
+      .red_packet{
+        font-size: 32px;
+        span{
+          display: inline-block;
+          width: 36px;
+          height: 36px;
+          border-radius: 36px;
+          color: #b6b6b6;
+          border: 1px solid #b6b6b6;
+        }
+      }
+    }
+  }
+  .order-wrap{
+    padding: 0 30px;
+    background: #FFFFFF;
+    margin-top: 20px;
+  }
+  .myOrder{
+    height: 97px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E9E9E9;/*no*/
+    .myOrderLeft{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .myOrderRight{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      span{
+        font-family: PingFangSC-Light;
+        font-size: 24px;/*px*/
+        color: #6D6D72;
+      }
+    }
+  }
+  //横行文字
+  .orderListText{
+    font-family: PingFangSC-Light;
+    font-size: 28px;/*px*/
+    color: #000000;
+    margin-left: 10px;
+    line-height: 40px;
+  }
+  //横向箭头
+  .jiantouImg{
+    width: 40px;
+    height: 40px;
+  }
+  .myOList{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: #FFFFFF;
+    margin-top: 20px;
+    flex: 1;
+    flex-direction: column;
+    padding-bottom: 1px;
+    .myCollectionBody{
+      height: 118px;
+      display: flex;
+      .myCollection{
+        height: 118px;
+        display: flex;
+        margin: 0 30px;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid#E9E9E9;
+        .myCLeft{
+          display: flex;
+          flex: 1;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
+    }
+  }
+  //订单状态模块
+  .orderStatus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    height: 148px;
+    padding: 0 30px;
+    width: 690px;
+    .statusBody{
+      height: 148px;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      position: relative;
+      .img{
+        width: 50px;
+        height: 50px;
+      }
+      span{
+        font-family: PPingFangSC-Light;
+        font-size: 22px;/*px*/
+        color: #6D6D72;
+        line-height: 30px;
+        margin-top: 5px;
+      }
+      .statusNumber{
+        position: absolute;
+        min-width: 28px;
+        height: 28px;
+        padding:4px;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;/*px*/
+        letter-spacing: 0.27px;
+        line-height: 28px;
+        text-align: center;
+        border-radius: 50%;
+        top: 20px;
+        left: 43px;
+      }
+    }
+  }
+}

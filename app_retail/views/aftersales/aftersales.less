@@ -1,0 +1,295 @@
+@import "~antd-mobile/lib/tabs/style/index.less";
+@import "myOrderList";
+
+.tabContainer{
+  height:100%;
+  width:100%;
+  background:#f4f6fe;
+}
+.tabView{
+  display: flex;
+  alignItems: center;
+  justifyContent: center;
+  background-color: #ffffff;
+  height:667*2px;
+}
+.listView{
+  display:table;
+  background-color:#f4f6fe;
+}
+.noData{
+  display:flex;
+  background-color:#f4f6fe;
+  height:1138px;
+  flex-direction: column;
+  align-items: center;
+  //justify-content:center;
+  .imgIcon{
+    margin-top: 197px;
+    height:286px;
+    width:286px;
+  }
+  .noDataText{
+    font-family: PingFangSC-Regular;
+    font-size: 30px;
+    color: #1B1B20;
+    letter-spacing: 0;
+    margin-top:40px;
+  }
+
+}
+
+.marginGray{
+  background-color:#f4f6fe;
+  height: 20px;
+}
+.imgContainer1{
+  flex-direction: column;
+  width: 188px;
+  height: 188px;
+  position: relative;
+  .img11{
+    width: 188px;
+    height: 188px;
+  }
+  .lable{
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 188px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    background: rgba(155,136,95,0.50);
+
+  }
+}
+.info{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D4D4D4;/*no*/
+  padding-left: 30px;
+}
+.right{
+  display: flex;
+  flex:1;
+  background-color:white;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: flex-start;
+
+  .title1{
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #2D2D2D;
+    letter-spacing: 0.33px;
+  }
+  .money{
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #9B9B9B;
+    letter-spacing: 1.26px;
+    margin-top: 21px;
+  }
+
+}
+.bottomStyle{
+  display:flex;
+  flex:1;
+  flex-direction: row;
+  align-items: center;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D4D4D4;/*no*/
+  height: 142px;
+  padding-right: 30px;
+  padding-left: 30px;
+  .handle{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    border-right: 1px solid #D4D4D4;/*no*/
+    background:white;
+    height:54px;
+    width:130px;
+  }
+  img{
+    height:34px;
+    width:32px;
+  }
+  .drawBack{
+    margin-left: 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #2D2D2D;
+    letter-spacing: 0.33px;
+  }
+  .button_style_1{
+    width: 180px;
+    height: 68px;
+
+    border-radius: 4px;
+    font-size: 28px;
+  }
+  .button_style_2{
+    width: 180px;
+    height: 68px;
+
+    border-radius: 8px;
+    font-size: 28px;
+  }
+  .button_style_3{
+    width: 180px;
+    height: 68px;
+
+    border-radius: 34px;
+    font-size: 28px;
+  }
+}
+.orderIdContainer1{
+   height: 60px;
+   //padding-left: 30px;
+   //padding-right:30px;
+   flex:1;
+   flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+  display:flex;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D4D4D4;/*no*/
+
+
+  .saleOrder{
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #2D2D2D;
+    letter-spacing: 0.33px;
+    width: 285px;
+    margin-left: 30px;
+  }
+  .orderName{
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #2D2D2D;
+    letter-spacing: 0.33px;
+    //flex:1;
+    //display:flex;
+    //justify-content: flex-end;
+    margin-right: 30px;
+    margin-left: 30px;
+
+  }
+}
+.status{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 14px;
+  .text{
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #2D2D2D;
+    letter-spacing: 0.31px;
+    text-align: right;
+    flex:1;
+    display: flex;
+
+  }
+  img{
+    width:15px;
+    height:28px;
+  }
+}
+.saleFooter{
+  display: flex;
+  flex:1;
+  height:130px;
+  justify-content: center;
+  align-items: center;
+  .text{
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #CECECE;
+    letter-spacing: 1.26px;
+  }
+}
+.listViewFootC{
+  height: 130px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #CECECE;
+    letter-spacing: 1.26px;
+  }
+  .imgLeft{
+    margin-right: 28px;
+    width: 122px;
+    height: 1px;
+  }
+  .imgRight{
+    margin-left: 28px;
+    width: 122px;
+    height: 1px;
+  }
+}
+.cellCheng{
+  width: 750px;
+  //flex:1;
+  //display:flex;
+  //flex-direction: column;
+}
+//.row {
+//  padding: 0 0.3rem;
+//  background-color: white;
+//}
+//.row-title {
+//  height: 1rem;
+//  line-height: 1rem;
+//  color: #888;
+//  font-size: 0.36rem;
+//  border-bottom: 1px solid #F6F6F6;
+//}
+//.row-text {
+//  display: inline-block;
+//  font-size: 0.32rem;
+//  line-height: 1;
+//}
+.handleSaleListView{
+  //height:1138px;
+  .am-list-footer{
+    padding: 0;
+  }
+}
+.am-tabs-ink-bar{
+  width: 130px !important;
+  margin-left: 123px !important;
+}
+.loadingView1{
+  background-image: url(../../images/aftersales/circle.png);;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  animation-name: cirle-anim;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-fill-mode: initial;
+  animation-play-state: initial;
+}
+

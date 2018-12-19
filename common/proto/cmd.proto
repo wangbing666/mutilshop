@@ -1,0 +1,21 @@
+package com.kabao.cmd.proto;
+
+
+enum CmdID {
+    CMD_ID_INVALID                = -1;
+    CMD_ID_UNKNOWN                = 0;
+    CMD_ID_LOGIN                  = 0x00030101;
+	CMD_ID_LOGIN_RESP             = 0x00038101;
+    CMD_ID_LOGIN_OUT              = 0x00030102;
+	CMD_ID_LOGIN_OUT_RESP         = 0x00038102;
+	CMD_ID_REMOTE_LOGIN           = 0x00030103;
+	CMD_ID_REMOTE_LOGIN_RESP      = 0x00038103;
+    CMD_ID_SEND_MESSAGE           = 0x00050701;
+    CMD_ID_SEND_MESSAGE_RESP      = 0x00058701;
+	CMD_ID_MESSAGE_UNDO           = 0x00050781;
+	CMD_ID_MESSAGE_UNDO_RESP      = 0x00058781;
+	CMD_ID_SINGLE_PUSH            = 0x00070701;
+	CMD_ID_SINGLE_PUSH_RESP       = 0x00078701;
+	CMD_ID_MUTIL_PUSH             = 0x00070702;
+	CMD_ID_MUTIL_PUSH_RESP        = 0x00078702;
+}

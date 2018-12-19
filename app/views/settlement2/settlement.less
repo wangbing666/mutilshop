@@ -1,0 +1,486 @@
+.settlementBody{
+  background: #F4F5F7;
+  width: 750px;
+  .division{
+    height: 20px;
+    width: 750px;
+    background: #f3f5fe;
+  }
+  .settmentAddress{
+    background: #fff;
+    margin-top:-20px;
+  .setAddress{
+    margin:0 30px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 28px;
+    padding: 20px 0;
+    border-top:1px solid #E9E9E9;
+  }
+}
+.addressRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  label{
+    display: inline-block;
+    font-size: 28px;/*px*/
+    color: #373737;
+    letter-spacing: 0.29px;
+    margin-right: 9px;
+  }
+  img{
+    width: 12px;
+    height: 21px;
+  }
+}
+.addressSet{
+  display: flex;
+  width: 750px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 24px 0;
+  .addressText{
+    font-size: 28px;/*px*/
+    color: #373737;
+    margin-left: 30px;
+    p{
+      span{
+        display: inline-block;
+        &:nth-of-type(1){
+          font-family: 'MicrosoftYaHei';
+          font-size: 28px;/*px*/
+          color: #373737;
+        }
+        &:nth-of-type(2){
+          font-family: 'MicrosoftYaHei';
+          font-size: 26px;/*px*/
+          color: #373737;
+          margin-left:23px;
+        }
+      }
+    }
+  }
+  .amountMoney{
+    font-family: 'PingFang-SC-Medium';
+    font-size: 24px;/*px*/
+    color: #9F3839;
+    letter-spacing: 1.38px;
+    line-height: 46px;
+    margin-right: 63px;
+  }
+}
+.ad_dress{
+  letter-spacing: 0.27px;
+  font-size: 26px;
+  color: #373737;
+  width: 590px;
+}
+  //留言部分
+  .leaveMessage{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 140px;
+    background: #f3f5fe;
+    input{
+      display: flex;
+      flex: 1;
+      padding: 0 30px;
+      font-size: 30px;/*px*/
+      color: #030308;
+      letter-spacing: 1.8px;
+      height: 90px;
+
+    }
+    span{
+      display: flex;
+      width: 92px;
+      height: 90px;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  //底部金额部分
+  .settlementbottrom{
+    background: #FFFFFF;
+    height: 98px;
+    border-top: 1px solid #D4D4D4;/*no*/
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .Sleft{
+      //margin-left: 30px;
+      display: flex;
+      flex-direction: row;
+      // justify-content: flex-end;
+      align-items: center;
+      .heji{
+        margin-left: 28px;
+        letter-spacing: 0.39px;
+        font-size: 28px;/*px*/
+        color:#373737;
+     }
+     .allPrice{
+        color:#D00510;
+        font-size: 30px;/*px*/
+        icon{
+         font-size: 22px;
+        }
+     }
+      img{
+        width: 38px;
+        height: 38px;
+      }
+      // span{
+      //   font-family: PingFangSC-Regular;
+      //   font-size: 40px;/*px*/
+      //   color: #000000;
+      //   letter-spacing: 0.55px；
+      // }
+    }
+    button{
+      border: 0;
+      height: 98px;
+      width: 236px;
+      font-family: 'PingFang-SC-Medium';
+      letter-spacing: 0.31px;
+      font-size: 28px;/*px*/
+      color:#fff;
+    }
+    .ablePayBtn{
+      background: #B4282D;
+      color: #fff;
+    }
+    .unAblePayBtn{
+      background: #B6B6B8;
+    }
+  }
+  //商品列表部分
+  .commodityList{
+    width: 750px;
+    height: auto;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    .commodityListTitle{
+      height: 80px;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin:0 30px;
+      .titleTxt{
+        font-size: 28px;/*px*/
+        color: #373737;
+        letter-spacing: 0.29px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+.dressModule{
+  width: 750px;
+}
+.settlementList{
+  width: 750px;
+ .setItem{
+   margin: 0 30px;
+   display: flex;
+   display: -webkit-flex;
+   justify-content:space-between;
+   border-top: 1px solid #E9E9E9;
+   padding: 20px 0;
+   .txt{
+     font-size: 26px;/*px*/
+     color:#373737;
+     letter-spacing: 0.27px;
+     width: 100px;
+   }
+   ::-webkit-input-placeholder { color:#e1e1e2; }
+   ::-moz-placeholder { color:#e1e1e2; } /* firefox 19+ */
+   :-ms-input-placeholder { color:#e1e1e2; } /* ie */
+   input:-moz-placeholder { color:#e1e1e2; }
+   input{
+     flex: 1;
+     text-align: right;
+   }
+   .priceRight{
+     color:#D00510;
+     icon{
+       font-size:22px;
+     }
+     span{
+       font-size:30px;
+     }
+   }
+ }
+}
+.dressIcon{
+  width: 100%;
+  background: #fff;
+  margin-top:-12px;
+  img{
+    height:6px;
+    width: 750px;
+  }
+}
+.SCommodityBody{
+  height: 166px;
+  display: flex;
+  flex: 1;
+  margin: 0 30px;
+  align-items: center;
+  border-top:1px solid #E9E9E9;
+  padding:30px 0;
+  .SCommodityImg{
+      width: 166px;
+      height: 166px;
+      margin-right: 30px;
+    }
+  .SCParameter{
+      display: flex;
+      flex: 1;
+      width: 1px;
+      height: 166px;
+      flex-direction: column;
+      justify-content:space-between;
+      .SCName{
+          p{
+            font-size: 28px;/*px*/
+            color: #373737;
+            letter-spacing: 0.31px;
+            line-height: 37px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          .SCSize{
+            margin-top:7px;
+            span{
+              display: inline-block;
+              color:#979797;
+              font-size: 24px;
+              line-height: 28px;
+              margin-right:28px;
+             }
+            }
+            .SCtui{
+              border:1px solid #FF931E;
+              color:#FF931E ;
+              font-size: 20px;
+              letter-spacing: 0.21px;
+              // height: 28px;
+              // line-height: 28px;
+              padding:4px 0;
+              width: 82px;
+              text-align: center;
+            }
+      }
+     
+      .priceModule{
+        display: flex;
+        justify-content: space-between;
+        .SCPrice{
+          color:#D00510;
+          line-height: 16px;
+          icon{
+            font-size: 20px;
+          }
+          span{
+            font-size: 28px;
+          }
+        }
+        .SCCount{
+          color: #6D6D72;
+          font-size: 20px;
+          icon{
+           margin-right: 4px;
+           display: inline;
+          }
+          span{
+            display: inline;
+          }
+        }
+      }
+    }
+ 
+  //修改按钮样式
+}
+.am-picker-popup-item{
+  font-size: 30px;
+  color: #030308;
+  letter-spacing: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.am-picker-popup-header{
+  height: 88px;
+  background-color: #f6f6f8;
+}
+.am-picker-col-indicator{
+  height: 69px;
+}
+.am-picker-col-item{
+  height: 69px;
+  line-height: 69px;
+  font-size: 34px;
+  color: #b6b6b8;
+}
+.am-picker-col-item-selected{
+  font-size: 34px;
+  color: #000;
+}
+.am-picker-col{
+  height: 400px;
+}
+//弹出框
+.dropOut{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: absolute;
+  .dropOutBody{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .diopOutCenter{
+      background: #FFFFFF;
+      width: 541px;
+      height: 210px;
+      border-radius: 28px;
+      .DOTitle{
+        height: 120px;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #D4D4D4;/*no*/
+        span{
+          font-size: 34px;
+          color: #000000;
+          letter-spacing: 0.95px;
+        }
+      }
+      .DOButton{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        .buLeft{
+          width: 260px;
+          height: 90px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-right: 1px solid #D4D4D4;/*no*/
+          span{
+            font-size: 34px;
+            color: #9B885F;
+            letter-spacing: 0.95px;
+          }
+        }
+        .buRight{
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          align-items: center;
+          height: 90px;
+          span{
+            font-size: 34px;
+            color: #9B885F;
+            letter-spacing: 0.95px;
+          }
+        }
+      }
+    }
+  }
+  //有地址样式
+  .haveAddress{
+    width: 100%;
+    height: auto;
+    .img{
+      width: 100%;
+    }
+  }
+}
+
+.chooseAddressContainer{
+  display:flex ;
+  flex-direction: column;
+}
+
+.chooseAddress{
+  margin-top: 16px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  justify-content: space-between;
+  .chooseAddress_l{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 38px;
+        height: 40px;
+        margin-right: 22px;
+        margin-top: 34px;
+    }
+    p{
+      span{
+        display: block;
+        &:nth-of-type(1){
+          font-family: 'MicrosoftYaHei';
+          font-size: 30px;/*px*/
+          color: #1A1A1A;
+          margin-top: 31px;
+          margin-bottom: 14px;
+        }
+        &:nth-of-type(2){
+          font-family: 'MicrosoftYaHei';
+          font-size: 26px;/*px*/
+          color: #1A1A1A;
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+  img{
+      width: 15px;
+      height: 28px;
+      margin-top: 40px;
+  }
+}
+.addressStripeAnd{
+  position: relative;
+  top:-6px;
+  margin-left: 2px;
+}
+.addressStripe {
+  position: relative;
+  top:-5px;
+  margin-left: 2px;
+}
+.am-picker-popup-header:after{
+  border-bottom: 0;
+}

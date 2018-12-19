@@ -1,0 +1,244 @@
+
+.searchListView {
+  // display: inherit;
+  width: 750px;
+  background: #F4f6fe;
+  padding: 0;
+  .am-list-header{
+    padding: 0;
+    border: 0;
+  }
+  .am-list-body:after {
+    border-bottom: 0px solid #ddd;
+    top: 0;
+  }
+  .am-list-body{
+    border: 0;
+    display: table;
+    background: #F4f6fe;
+    // margin-top: -10px;
+  }
+  .am-list-footer{
+    padding: 0;
+  }
+}
+.searchBody{
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+  background: #f3f5fe;
+  //height: 100%;
+  .SBody{
+    width: 750px;
+    height: 95px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border: 1px solid #D4D5D9;/*no*/
+    .SBodyLeft{
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      height: 61px;
+      background: #ECECEC;
+      border-radius: 12px;
+      margin-left: 20px;
+      img{
+        margin-left: 27px;
+        height: 27px;
+        width: 26px;
+      }
+      .SBodyRight{
+        display: flex;
+        flex: 1;
+        input{
+          display: flex;
+          flex: 1;
+          background: #ECECEC;
+          margin-left: 20px;
+          height: 61px;
+          font-family: PingFangSC-Regular;
+          font-size: 26px;
+          color: #7A7A7A;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .searchBottom{
+    width: 750px;
+    margin-top: 95px;
+  }
+  //热门搜索
+  .popularSearches{
+    width: 750px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    .PSTitle{
+      display: flex;
+      flex: 1;
+      padding-left: 30px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      height: 80px;
+      background: #F2F2F2;
+      label{
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #2D2D2D;
+        letter-spacing: 1.93px;
+        line-height: 43px;
+      }
+    }
+    //热门搜索列表
+    .PSList{
+      background: #FFFFFF;
+      width: 736px;
+      padding: 22px 0;
+      position: relative;
+      display: table;
+      margin-left: 8px;
+      button{
+        border: 1px solid #C9C9C9;/*no*/
+        border-radius: 12px;
+        background: #FFFFFF;
+        height: 60px;
+        width: 140px;
+        line-height: 60px;
+        float: left;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #1b1b20;
+        margin: 10px 21px;
+      }
+    }
+  }
+  //历史搜索
+  .historicalSearch{
+    width: 750px;
+    height: auto;
+    position: relative;
+    .HSTitle{
+      height: 80px;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      label{
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #2D2D2D;
+        letter-spacing: 1.93px;
+        line-height: 43px;
+      }
+      img{
+        width: 30px;
+        height: 34px;
+      }
+    }
+    //历史记录列表
+    .HSList{
+      height: auto;
+      width: 750px;
+      position: relative;
+      .HSLbody{
+        display: flex;
+        flex: 1;
+        height: 88px;
+        flex-direction: row;
+        padding-left: 30px;
+        background: #FFFFFF;
+        .HSLText{
+          height: 88px;
+          display: flex;
+          flex: 1;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          border-bottom: 1px solid #D4D5D9;/*no*/
+          img{
+            height: 32px;
+            width: 32px;
+            margin-right: 40px;
+          }
+          label{
+            font-family: PingFangSC-Regular;
+            font-size: 24px;
+            color: #1B1B20;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+  }
+  .searchPromptText{
+    height: 270px;
+    width: 750px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span{
+
+    }
+  }
+  .noContent{
+    height: 130px;
+    width: 750px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span{
+      font-family: PingFangSC-Regular;
+      font-size: 22px;
+      color: #CECECE;
+      letter-spacing: 1.26px;
+    }
+  }
+}
+.listViewFoot{
+  height: 130px;
+  width: 750px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background:#f3f5fe;
+  span{
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #CECECE;
+    letter-spacing: 1.26px;
+  }
+  .imgLeft{
+    margin-right: 28px;
+    width: 122px;
+    height: 1px;
+  }
+  .imgRight{
+    margin-left: 28px;
+    width: 122px;
+    height: 1px;
+  }
+}

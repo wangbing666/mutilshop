@@ -1,0 +1,17 @@
+package com.kabao.login.proto;
+
+
+message LoginRequest {
+    required int64  uuid = 1;
+    required string checkcode = 2;
+}
+
+
+message LoginResponse {
+    enum Error {
+        ERR_OK = 0;
+        ERR_SYS = -1;
+    }
+    required int32 status = 1;
+	required int32 offlinecount = 2;
+}

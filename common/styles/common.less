@@ -1,0 +1,127 @@
+
+
+body,div,span,header,footer,nav,section,aside,article,ul, li, a, p, h1, h2, h3, h4,h5, i, b, textarea, button, input, select  {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: 'PingFangSC-Regular';
+  -webkit-tap-highlight-color:transparent;
+  &:focus {
+    outline: none;
+  }
+}
+
+body{
+  background-color: #ebebeb;
+}
+
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear{
+  zoom:1;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.show{
+  display: block!important;
+}
+
+.hide{
+  display: none!important;
+}
+
+.ellips{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.am-modal{
+  top:-100px;
+}
+//半圆
+.btnSemicircle{
+  border-radius: 44px !important;
+}
+//特殊半圆高度
+.specialSemicircle{
+  border-radius: 30px !important;
+}
+//指定弧度
+.btnCircular{
+  border-radius: 8px !important;
+}
+//没有弧度
+.btnNoCircular{
+  border-radius: 0 !important;
+}
+
+.am-picker-popup-item{
+  height: 94px!important;
+}
+.am-picker-col-item{
+  font-size: 28px!important;
+}
+.am-picker-col-item-selected{
+  font-size: 38px!important;
+}
+
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+
+.am-list-view-scrollview-content{
+  width: 100%;
+}
+.am-list-view-scrollview-content{
+  height: 100% !important;
+  .am-pull-to-refresh-content-wrapper{
+    min-height: 100% !important;
+  }
+}
+.list-view-section-body::after{
+  display: block;
+  content: " ";
+  height: 0;
+  clear: both;
+}
+
+input{
+  -webkit-appearance: none;
+}
+ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// html:not([data-scale]) .am-modal-button-group-h::before{
+//   background-color: #b8b8b8!important;
+//   height: 2px;
+// }
+// html:not([data-scale]) .am-modal-button-group-h .am-modal-button:last-child::before{
+//   background-color: #b8b8b8!important;
+//   width: 2px!important;
+// }

@@ -1,0 +1,70 @@
+.name-space-suggestion{
+  background: #ffffff;
+   border-top: 1px solid #e9e9e9;/*no*/
+  width: 100%;
+  box-sizing: border-box;
+  .productItem{
+    position: relative;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-bottom: 1px solid #E9E9E9; 
+    .img-wrap{
+      position: relative;
+      height: 314px;
+      overflow: hidden;
+      img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &:nth-child(odd){
+      border-right: 1px solid #E9E9E9; 
+    }
+    h2{
+      font-size: 26px;
+      color: #373737;
+      line-height: 32px;
+      margin: 10px 0;
+      height: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .desc{
+      padding-top: 50px;
+    }
+    .likeGoodsprice{
+      span{
+        position: absolute;
+        bottom: 120px;
+        width: 32px;
+        height: 32px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 32px;
+        background: #B4282D;
+        border-radius: 4px;
+      }
+      i{
+        float: left;
+        font-size: 28px;
+        color: #D00510;
+        b{
+          font-size: 22px;
+        }
+      }
+      a{
+        float: left;
+        font-size: 22px;
+        color: #B6B6B8;
+        text-decoration: line-through;
+        padding: 7px 0 0  15px;
+      }
+    }
+  }
+}

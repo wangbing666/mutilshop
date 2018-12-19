@@ -1,0 +1,244 @@
+/*函数*/
+
+
+/*样式*/
+.login-wrap{
+  background: #ffffff;
+}
+.containerBody{
+  width:100%;
+  height: 1207px;
+  min-height: 100%;
+  //position:absolute;
+  //background:url(../../images/loginPage/LoginBgImg.png);
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  // input::-webkit-input-placeholder{
+  //   color: #FFFFFF;
+  // }
+  // input:-moz-placeholder{
+  //   color: #FFFFFF;
+  // }
+  // input::-moz-placeholder{
+  //   color: #FFFFFF;
+  // }
+  // input:-ms-input-placeholder{
+  //   color: #FFFFFF;
+  // }
+  //登录输入框模块
+  .loginBodyManage{
+    height: 480px;
+    width: 690px;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    .phoneDiv{
+      width:690px;
+      height: 98px;
+      display: flex;
+      //flex: 1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      border-bottom: 1px solid #D5D5D5;
+      .shoujiImg{
+        height: 41px;
+        width: 29px;
+      }
+      .phoneInputStyle{
+        height: 50px;
+        width: 600px;
+        font-size: 26px;/*px*/
+        line-height: 50px;
+        background: #ffffff;
+        //padding-top: 20px;
+        //padding-bottom: 20px;
+        display: flex;
+        flex: 1;
+        color: #000000;
+        padding: 0 30px;
+      }
+      .clearButton{
+        width:34px;
+        height: 34px;
+        position: absolute;
+        right: 20px;
+        top: 63px;
+        //border-radius:17px;
+        //border-color: red;
+        //border-width: 1px;
+
+        //background: white;
+      }
+    }
+    .passwordDiv {
+      width:690px;
+      height: 98px;
+      display: flex;
+      //flex: 1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #D5D5D5;
+      //img{
+      //  height: 33px;
+      //  width: 40px;
+      //}
+      .passwordInputStyle{
+        height: 50px;
+        width: 300px;
+        font-size: 26px;/*px*/
+        background: transparent;
+        line-height: 50px;
+        //padding-top: 20px;
+        //padding-bottom: 20px;
+        //font-weight: 400;
+        display: flex;
+        flex: 1;
+        color: #000000;
+        padding: 0 30px;
+      }
+      .authMaStyle{
+        margin-left: 26px;
+        background-color:#ffffff;//#FFDCED;//#FFF0F7;// #FFE2F0;//#FFF0F7;
+        width: 188px;
+        height:24px;
+        font-size: 22px;/*px*/
+        color: #1e1e1e;
+        border-left: 1px solid #D5D5D5;
+        //border: 2px solid #FFFFFF;
+        //border-radius: 12px;
+      }
+    }
+    .loginBtnStyle {
+      font-size: 34px;/*px*/
+      color: #F4F5F7;
+      background: transparent;
+      margin-top: 28px;
+      border:1px solid #D5D5D5;/*no*/
+      //border-radius:12px;
+      width: 627px;
+      height: 80px;
+      font-weight: 100;
+    }
+    .loginBtnStyleRed{
+      font-size: 30px;/*px*/
+      color: #FFFFFF;
+      margin-top: 90px;
+      width: 690px;
+      height: 88px;
+      background: #B4282D;
+      border-radius: 8px;
+    }
+  }
+
+  //logo 模块
+  .enterpriseStyleLogin{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 290px;
+    img{
+      width: 170px;
+      height: 85px;
+      margin-top: 110px;
+    }
+    label{
+      //margin-top: 110px;
+      margin-bottom: 78px;
+      margin-top: 300px;
+      word-spacing:12px;
+      font-size: 34px;
+      color: #F4F5F7;
+      //letter-spacing: 12px;
+    }
+  }
+}
+
+.getAuth{
+  width: 180px;
+  height:88px;
+  background: #FFFFFF;
+}
+//.am-toast.am-toast-mask .am-toast-notice{
+//
+//  width: auto !important;
+//  height: auto !important;
+//
+//}
+//.am-toast-notice-content .am-toast-text{
+//  line-height: normal !important;
+//  height: auto !important;
+//  width: auto !important;
+//}
+//
+//.am-toast-notice-content .am-toast-text.am-toast-text-icon{
+//  width: 400px !important;
+//  height: 190px !important;
+//  display: flex !important;
+//  justify-content: center !important;
+//  align-items: center !important;
+//  flex-direction: column !important;
+//}
+.alertLoginStyle(){
+  div:nth-child(2){
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 440px;
+    height: 200px;
+    //background: red;
+    border-radius: 18px;
+  }
+  img{
+    //background-color: white;
+    z-index: 99999999999999;
+    margin-top: 39px;
+    margin-left: 190px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 17px;
+  }
+  p{
+    z-index: 99999999999999;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    font-family: PingFangSC-Regular;
+    font-size: 26px;/*px*/
+    letter-spacing: 1.88px;
+    font-weight: normal !important;
+  }
+}
+.loginBackViewStyles{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 440px;
+  height: 200px;
+  opacity: 0.6;
+  background: #000000;
+  border-radius: 18px;
+}
+.alertLoginShow{
+  display: block;
+  .alertLoginStyle;
+}
+
+.alertLoginHide{
+  display: none;
+  .alertLoginStyle;
+}
